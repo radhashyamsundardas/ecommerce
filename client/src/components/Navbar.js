@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function bar() {
   return (
-    <div id="nb">
-        <bar  expand="lg" bg="light" sticky="top">
+    <div >
             <Link className='-link' to="/">
                 <div>
                     <h1>ECOMMERCE</h1>
@@ -44,7 +43,6 @@ export default function bar() {
                 </li>
             </ul>
 
-        </bar>
     </div>
   )
 }
