@@ -10,17 +10,25 @@ export default function bar() {
             
             <ul id="navbar"class="bar- ml-auto item-indent">
                 <li class="-item">
-                    <Link to="/Aboutus">
+                    <Link to="/Treadmills">
                         <div >
-                            <h2>About US</h2>
+                            <h2>TREADMILLS</h2>
                         </div>
                     </Link>
                 </li>
 
                 <li class="-item">
-                    <Link to="/Product">
+                    <Link to="/Bikes">
                         <div >
-                            <h2>Products</h2>
+                            <h2>BIKES</h2>
+                        </div>
+                    </Link>
+                </li>
+
+                <li class="-item">
+                    <Link to="/Shoes">
+                        <div >
+                            <h2>SHOES</h2>
                         </div>
                     </Link>
                 </li>
@@ -34,7 +42,7 @@ export default function bar() {
                 </li>
 
                 <li class="-item">
-                    <Link to="/LOGIN/SIGNUP">
+                    <Link to="/LOGIN">
                         <div >
                             <h2>LOGIN/SIGN UP</h2>
                         </div>
