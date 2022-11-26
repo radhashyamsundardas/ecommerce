@@ -36,7 +36,7 @@ export default function bar() {
                 <li class="-item">
                     <Link to="/Contactus">
                         <div >
-                            <h2>Contact US</h2>
+                            <h2>CONTACT US</h2>
                         </div>
                     </Link>
                 </li>
