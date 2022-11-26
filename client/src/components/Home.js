@@ -1,9 +1,15 @@
 import React from 'react'
 
+
 function home() {
   return (
-    <div>home</div>
-  )
+  <div>TRENDING ITEMS</div>
+
+
+  
+  );
 }
+
+
 
 export default home

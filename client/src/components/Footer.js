@@ -7,13 +7,14 @@ function Footer() {
      <div >
             
             <ul>
-                <li class="-item">
+                <li  class="-item">
                     <Link to="/SalesAssitance">
                         <div >
                             <h2>SALES ASSISTANCE</h2>
                             <ul>
                               <li>Call us at 888-888-8888</li>
-                              <li>Office Hours: <br/> Monday - Friday: 9AM -5PM EST</li>
+                              
+                              <li>Office Hours:<br/> Monday-Friday: 9AM-5PM EST</li>
                             </ul>
                         </div>
                     </Link>

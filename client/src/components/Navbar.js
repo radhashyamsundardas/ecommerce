@@ -4,12 +4,11 @@ import { Link } from 'react-router-dom'
 export default function bar() {
   return (
     <div >
-            <Link className='-link' to="/">
-                <div>
-                    <h1>ECOMMERCE</h1>
+                <div >
+                    <h1>ECOMMERCE COMPANY LOGO</h1>
                 </div>
-            </Link>
-            <ul class="bar- ml-auto item-indent">
+            
+            <ul id="navbar"class="bar- ml-auto item-indent">
                 <li class="-item">
                     <Link to="/Aboutus">
                         <div >
@@ -35,9 +34,9 @@ export default function bar() {
                 </li>
 
                 <li class="-item">
-                    <Link to="/Barbells">
+                    <Link to="/LOGIN/SIGNUP">
                         <div >
-                            <h2>BARBELLS</h2>
+                            <h2>LOGIN/SIGN UP</h2>
                         </div>
                     </Link>
                 </li>
