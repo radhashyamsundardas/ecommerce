@@ -10,6 +10,16 @@ export default function bar() {
             
             <ul id="navbar"class="bar- ml-auto item-indent">
                 <li class="-item">
+
+              
+
+                    <Link to="/Home">
+                        <div >
+                            <h2><img src='https://www.freeiconspng.com/uploads/yellow-house-clip-art-png-20.png' height={30}></img></h2>
+                        </div>
+                    </Link>
+                </li>
+                <li class="-item">
                     <Link to="/Treadmills">
                         <div >
                             <h2>TREADMILLS</h2>
