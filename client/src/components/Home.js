@@ -1,59 +1,73 @@
-import React from 'react'
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
 
-function home() {
+
+
+
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import Carousel from 'react-bootstrap/Carousel';
+  
+export default function Home() {
   return (
-    <div id="home">
-      <h2>DEALS OF THE WEEK</h2>
-
-      <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="https://res.cloudinary.com/iconfitness/image/upload/w_690,h_459,c_fill,ar_230:153,dpr_1,f_auto,q_auto/v1/site--15/jan21-NETL71420_gallery_2_lg-v2.jpg" height={200}/>
-    <Card.Body>
-      <Card.Title>Commercial 14.9</Card.Title>
-      <Card.Text>
-    
-ON-DEMAND STUDIO WORKOUTS
-
-Enjoy thousands of high-energy studio classes whenever you want them, day or night. Your machine will automatically adjust incline and resistance based on trainer cues.
-TIME TO ESCAPE & EXPLORE
-
-Experience global sights as our coaches digitally adjust your resistance and incline to match theirs for the best workout of your life.
-      </Card.Text>
-      <h3>$1,599</h3>
-      <h4>0% APR FOR 12 MONTHS†</h4>
-      <Button variant="primary">ADD TO CART</Button>
-    </Card.Body>
-  </Card>
-
-
-  <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="https://i5.walmartimages.com/asr/62a2765d-079e-431a-9de7-de8823da27eb.927e82239416c48ef464e48bddec8f67.jpeg" height={200}/>
-    <Card.Body>
-      <Card.Title>FitRx SmartBell Gym, 60lb 4-in-1 Portable Interchangeable Dumbbell, Barbell, and Kettlebell Set with Adjustable Weights,</Card.Title>
-      <Card.Text>
-
-4-in-1 interchangeable weight system can be used as a barbell, kettlebell, two dumbbells, or push-up handles
-Various weights totaling 60lbs
-Customizable weight configurations for each piece of equipment
-Versatile and space-conscious design
-Slip-resistant push-up handles
-Padded barbell connector
-Comfortable textured dumbbell grip
-      </Card.Text>
-      <h3>$89.00</h3>
-      <Button variant="primary">ADD TO CART</Button>
-    </Card.Body>
-  </Card>
-
-      
+    <div style={{ display: 'block', width: 1000, paddingLeft: 300 }}>
+      <h4>Deals of the week</h4>
+      <Carousel>
+        <Carousel.Item interval={8000}>
+          <img
+            className="d-block w-100"
+src="https://totalbodyexperts.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/5/_/5_2.png" height={400}
+            alt="Image One"
+          />
+          <Carousel.Caption>
+            <h3>Label for first slide</h3>
+            <p>Sample Text for Image One</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={800}>
+          <img
+            className="d-block w-100"
+src="https://m.media-amazon.com/images/I/71MHeFRk30L._AC_SX679_.jpg" height={400}
+            alt="Image Two"
+          />
+          <Carousel.Caption>
+            <h3>Label for second slide</h3>
+            <p>Sample Text for Image Two</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={8000}>
+          <img
+            className="d-block w-100"
+src="https://m.media-amazon.com/images/I/71Ii1NiUdIL._AC_SX679_.jpg"height={400}
+            alt="Image One"
+          />
+          <Carousel.Caption>
+            <h3>Label for first slide</h3>
+            <p>Sample Text for Image One</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={8000}>
+          <img
+            className="d-block w-100"
+src="https://m.media-amazon.com/images/I/41rG5yj0hoL._AC_SX679_.jpg" height={400}
+            alt="Image One"
+          />
+          <Carousel.Caption>
+            <h3>Label for first slide</h3>
+            <p>Sample Text for Image One</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={8000}>
+          <img
+            className="d-block w-100"
+src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTZx9OMYz8NJZ0P8wHHWccWpapimO6rmOz6S6D1FYz6GCjVsqx3VnTIbuuHlJviK-ju2dDcdy6kCjwhBOdZZ31P5ftxhmwWzgIUgo22k5U&usqp=CAE" height={400}
+            alt="Image One"
+          />
+          <Carousel.Caption>
+            <h3>Label for first slide</h3>
+            <p>Sample Text for Image One</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </div>
-);
+  );
 }
-
-
-
- export default home
-
-

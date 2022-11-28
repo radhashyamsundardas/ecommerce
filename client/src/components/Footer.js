@@ -10,7 +10,7 @@ function Footer() {
                 <li  class="-item">
                     <Link to="/SalesAssitance">
                         <div >
-                            <h2>SALES ASSISTANCE</h2>
+                            <h5>SALES ASSISTANCE</h5>
                             <ul>
                               <li>Call us at 888-888-8888</li>
                               
@@ -23,7 +23,7 @@ function Footer() {
                 <li class="-item">
                     <Link to="/CustomerService">
                         <div >
-                            <h2>CUSTOMER SERVICE</h2>
+                            <h5>CUSTOMER SERVICE</h5>
                             <ul>
                               <li>Power Rack Comparison</li>
                               <li>Contact Us</li>
@@ -39,7 +39,7 @@ function Footer() {
                 <li class="-item">
                     <Link to="/Account">
                         <div >
-                            <h2>ACCOUNT</h2>
+                            <h5>ACCOUNT</h5>
                             <ul>
                               <li>My Account</li>
                               <li>Track Order</li>
@@ -53,7 +53,7 @@ function Footer() {
                 <li class="-item">
                     <Link to="/About">
                         <div >
-                            <h2>ABOUT</h2>
+                            <h5>ABOUT</h5>
                             <ul>
                               <li>About Us</li>
                               <li>Careers</li>
