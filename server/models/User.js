@@ -1,9 +1,9 @@
 const { Schema, model } = require('mongoose');
-const { End_user } = require('.');
+const { User } = require('.');
 const bcrypt = require('bcrypt');
 
 
-const end_userSchema = new Schema({
+const userSchema = new Schema({
     username: {
       type: String,
       required: true,
@@ -14,7 +14,7 @@ const end_userSchema = new Schema({
       type: String,
       required: true
     },
-    telephone_number: {
+    telephoneNumber: {
       type: Number, 
       require: true
     },
@@ -44,7 +44,7 @@ const end_userSchema = new Schema({
   }
 );
 
-end_userSchema.pre('save', async function (next) {
+userSchema.pre('save', async function (next) {
     if (this.isNew || this.isModified('password')) {
       const saltRounds = 20;
       this.password = await bcrypt.hash(this.password, saltRounds);
@@ -58,6 +58,6 @@ end_userSchema.pre('save', async function (next) {
   };
   
 
-const End_user = model('End_user', end_userSchema);
+const User = model('User', userSchema);
 
-module.exports = End_user;
+module.exports = User;
