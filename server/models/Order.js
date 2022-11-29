@@ -31,3 +31,7 @@ const orderSchema = new Schema ({
     },
     //question, how do I add the quantity: Int tax: Float Total: Float carrier: String tracking_number: String carts: [Carts]
 })
+
+const Order = model('Order', orderSchema);
+
+module.exports = Order;
