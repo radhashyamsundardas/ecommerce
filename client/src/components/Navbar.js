@@ -21,7 +21,7 @@ export default function bar() {
       <img className="d-inline-block align-middle mr-2" style={styles.pic} src={logo} alt="Company logo" />
       </Link>
       <div id="navbarSupportedContent" className="collapse navbar-collapse">
-      <ul className="navbar-nav ml-auto">
+      <ul className="navbar-nav ml-auto text-center">
         
         <li className="nav-item">
           <Link className="link-to" to="/Treadmills">TREADMILLS</Link>

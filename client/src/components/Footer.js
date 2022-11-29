@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer>
-      <div >
+    <footer className="page-footer text-center font-small bg-dark pt-2">
+      <div className="container-fluid text-sm-left" >
+      <div className="row">
         <Link className ="nav-item" to="/SalesAssitance">SALES ASSISTANCE</Link>
         {/* <ul>
           <li>Call us at 888-888-8888</li>
@@ -46,8 +47,9 @@ function Footer() {
           <li>Financing</li>
         </ul> */}
       </div>
+      </div>
 
-      <span className="copywrite">Geogia Tech Students © 2022</span>
+      <div className="footer-copyright bg-info text-center py-0">Geogia Tech Students © 2022</div>
     </footer>
   );
 }
