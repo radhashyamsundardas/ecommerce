@@ -1,21 +1,22 @@
 const { Schema, model } = require('mongoose');
 const { Cart } = require('.');
+const dateFormat = require('../utils/dateFormat');
 
 
 const cartSchema = new Schema ({
-    _id: {
+    id: {
         type: Number,
         required: true
     },
-    customer_id: {
+    customerId: {
         type: Number,
         required: true
     },
-    product_name: {
+    productName: {
         type: String,
         required: true
     },
-    product_description: {
+    productDescription: {
         type: String,
         require: true
     },
@@ -23,13 +24,14 @@ const cartSchema = new Schema ({
         type: String,
         require: true
     },
-    product_id: {
+    productId: {
         type: Number,
         require: true
     },
-    cart_date: {
-        type: Number,
-        require: true
+    cartDate: {
+        type: Date,
+        default: Date.now,
+        get: (timestamp) => dateFormat(timestamp)
     },
     quantity: {
         type: Number,
@@ -38,7 +40,7 @@ const cartSchema = new Schema ({
     username: [
         {
           type: Schema.Types.ObjectId,
-          ref: ['Username']
+          ref: ['End_user']
         }
     ],
 })
