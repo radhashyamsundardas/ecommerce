@@ -98,7 +98,7 @@ const resolvers = {
                     throw new AuthenticationError('Sorry we could not find a user with this email');
                 }
 
-                const correctPassword = await. end_user.isCorrectPassword(password); //else confirm password is correct
+                const correctPassword = await end_user.isCorrectPassword(password); //else confirm password is correct
                 if(!correctPassword) {      //if password is not correct 
                     throw new AuthenticationError('Incorrect Password');    //throw error message
                 }

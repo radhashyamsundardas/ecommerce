@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
 
 const orderSchema = new Schema ({
     _id: {
@@ -23,11 +24,13 @@ const orderSchema = new Schema ({
     },
     order_date: {
         type: Date,
-        required: true
+        default: Date.now,
+        get: (timestamp) => dateFormat(timestamp)
     },
     delivery_date: {
         type: Date,
-        require: true
+        default: Date.now,
+        get: (timestamp) => dateFormat(timestamp)
     },
     //question, how do I add the quantity: Int tax: Float Total: Float carrier: String tracking_number: String carts: [Carts]
 })
