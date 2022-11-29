@@ -1,5 +1,4 @@
 const { Schema, model } = require('mongoose');
-const { Cart } = require('.');
 const dateFormat = require('../utils/dateFormat');
 
 
@@ -35,7 +34,7 @@ const cartSchema = new Schema ({
     username: [
         {
           type: Schema.Types.ObjectId,
-          ref: ['End_user']
+          ref: ['User']
         }
     ],
 })

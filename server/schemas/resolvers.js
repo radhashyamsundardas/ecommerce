@@ -1,37 +1,37 @@
 const {User, Product, Order, Cart} = require('../models');
 const {AuthenticationError} = require('apollo-server-express');
-const {signToken} = require('..utils/auth');
+const {signToken} = require('../utils/auth');
 
 const resolvers = {
     Query: { //GET routes
-        Users: async () => {
-            return User.find().populate('orders'); //when querying users we must also populate or pull all of the user's orders
+        users: async () => {
+            return User.find().populate('order'); //when querying users we must also populate or pull all of the user's order
         },
-        User: async (parent, {username}) => { //when querying one user we must also populate or pull all of the user's orders
-            return User.findOne({username}).populate('orders');
+        user: async (parent, {username}) => { //when querying one user we must also populate or pull all of the user's order
+            return User.findOne({username}).populate('order');
         },
-        orders: async (parent, {username}) => { //find orders by username and sort by the creation date
+        orders: async (parent, {username}) => { //find order by username and sort by the creation date
             const params = username ? {username} : {};
             return Order.find(params).sort({createdAt: -1});
         },
         order: async (parent, {orderId}) => { //find ONE order by order ID
             return Order.findOne({id: orderId});
         },
-        carts: async (parent, {username}) => { //find open carts by username and sort by creation date
+        carts: async (parent, {username}) => { //find open cart by username and sort by creation date
             const params = username ? {username} : {};
             return Cart.find(params).sort({createdAt: -1});
         },
-        cart: async (parent, {cartId}) => { //find all open carts by cart ID and list by ID
+        cart: async (parent, {cartId}) => { //find all open cart by cart ID and list by ID
             return Cart.findOne({id: cartId});
         },
         products: async () => { //find all products
-            return Products.find();
+            return Product.find();
         },
-        products: async (parent, {productId}) => { //find products by product ID and sort by category 
-            const params = productId ? {productId} : {};
-            return Products.find(params).sort({category: category});
-        },
-        products: async (parent, {username}) => { //find all products created by a admin user and sort results by product name
+        // product: async (parent, {productId}) => { //find products by product ID and sort by category 
+        //     const params = productId ? {productId} : {};
+        //     return Product.find(params).sort({category: category});
+        // },
+        product: async (parent, {username}) => { //find all products created by a admin user and sort results by product name
             const params = username ? {username} : {};
             return Product.find(params).sort({productName});
         }
@@ -141,14 +141,14 @@ const resolvers = {
             },
 
             removeProduct: async (parent, {productId}, context) => {
-                if (context.orders) {
+                if (context.order) {
                     const product = await Product.findOneAndDelete({
                         id: productId,
-                        customerId: context.orders.id,
+                        customerId: context.order.id,
                     });
                     await Order.findOneAndUpdate(
                         { id: context.order.id},
-                        {$pull: {products: product.id}} 
+                        {$pull: {product: product.id}} 
                     );
                     return product;
                 }
@@ -179,7 +179,7 @@ const resolvers = {
                     });
                     await User.findOneAndUpdate(
                         {id: context.user.id},
-                        {$addToSet: { orders: order.id}}
+                        {$addToSet: { order: order.id}}
                     );
                     return order;
                 }
@@ -229,7 +229,7 @@ const resolvers = {
                         });
                         await User.findOneAndUpdate(
                             {id: context.user.id},
-                            {$addToSet: {carts: cart.id}}
+                            {$addToSet: {cart: cart.id}}
                         );
                         return cart;
                     }

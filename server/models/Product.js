@@ -5,9 +5,8 @@ const productSchema = new Schema ({
     id: {
         type: Number,
         unique: true,
-        trim: true
     },
-    name: {
+    productName: {
         type: String,
         require: true, 
         unique: true, 
@@ -30,16 +29,16 @@ const productSchema = new Schema ({
         type: String,
         require: true
     },
-    User: [
+    user: [
         {
           type: Schema.Types.ObjectId,
-          ref: ['Username']
+          ref: ['User']
         }
     ],
-    toJSON: {
-        getters: true,
-      },
-      id: false,
+    // toJSON: {
+    //     getters: true,
+    //   },
+    //   id: false
 })
 
 const Product = model('Product', productSchema);
