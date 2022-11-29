@@ -1,6 +1,6 @@
-const {gpl} = requestAnimationFrame('apollo-server-express');
+const {gql} = require('apollo-server-express');
 
-const typeDefs = gpl `
+const typeDefs = gql `
     type Order {
         _id: ID
         payment_status: Boolean

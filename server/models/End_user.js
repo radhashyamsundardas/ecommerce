@@ -1,9 +1,10 @@
 const { Schema, model } = require('mongoose');
-const { Username } = require('.');
+const { End_user } = require('.');
 const bcrypt = require('bcrypt');
 
-const usernameSchema = new Schema({
-    name: {
+
+const end_userSchema = new Schema({
+    username: {
       type: String,
       required: true,
       unique: true,
@@ -57,6 +58,6 @@ end_userSchema.pre('save', async function (next) {
   };
   
 
-const Username = model('Username', usernameSchema);
+const End_user = model('End_user', end_userSchema);
 
-module.exports = Username;
+module.exports = End_user;
