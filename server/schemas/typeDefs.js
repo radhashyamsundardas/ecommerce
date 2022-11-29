@@ -8,7 +8,6 @@ const typeDefs = gql `
         paymentId: String
         productId: ID
         orderDate: scalar Date
-        deliveryDate: scalar Date
         quantity: Int
         tax: Float
         Total: Float

@@ -28,11 +28,6 @@ const cartSchema = new Schema ({
         type: Number,
         require: true
     },
-    cartDate: {
-        type: Date,
-        default: Date.now,
-        get: (timestamp) => dateFormat(timestamp)
-    },
     quantity: {
         type: Number,
         require: true
