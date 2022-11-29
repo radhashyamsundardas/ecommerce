@@ -6,7 +6,7 @@ function Shoes() {
   return (
 
     <div>
-
+ <div className="card-container">
 
 <Card style={{ width: '18rem',height:'25rem' }}>
 
@@ -145,7 +145,7 @@ You Save:	$20.00 (20%)</h6>
 </Card>
 
 
-
+</div>
     </div>
   )
 }
