@@ -3,7 +3,7 @@ const {gql} = require('apollo-server-express');
 const typeDefs = gql `
     type Order {
         id: ID
-        payment_status: Boolean
+        paymentStatus: Boolean
         customerId: ID
         paymentId: String
         productId: ID
@@ -12,18 +12,18 @@ const typeDefs = gql `
         total: Float
         carrier: String
         trackingNumber: String
-        carts: [Carts]
+        cart: [Cart]
     }
 
     type Cart {
         id: ID
+        customerId: ID
         productName: String
         productDescription: String
         category: String
-        customerId: ID
         productId: ID
         quantity: Int
-        user: user
+        username: user
     }
 
     type Product {
@@ -34,35 +34,35 @@ const typeDefs = gql `
         price: Float
         category: String
         imageLink: String
-        product: user
+        product: User
     }
 
-    type End_user {
+    type User {
         id: ID
         name: String
         address: String
         city: String
         state: String
-        zip code: String
+        zipCode: String
         country: String
         telephone: String
         email: String
         password: String
         paymentMethod: String
-        carts: [Carts]
-        orders: [Orders] 
+        cart: [Cart]
+        order: [Order] 
     }
 
     type Query {
-        users: [End_users]
-        user (username: String!): User
-        orders(username: String!): [Orders]
-        order (orderId: ID!): Order
-        carts(username: String!): [Carts]
-        cart (cartId: ID!): Cart
-        products: [Products]
-        products(productId: ID!): [Products]
-        products(username: String!): [Products]
+        user: [User]
+        user(username: String!): User
+        order(username: String!): [Order]
+        order(orderId: ID!): Order
+        cart(username: String!): [Cart]
+        cart(cartId: ID!): Cart
+        product: [Product]
+        product(productId: ID!): Product
+        product(username: String!): [Product]
     }
 
     type Mutation {

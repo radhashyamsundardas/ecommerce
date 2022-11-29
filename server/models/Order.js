@@ -1,3 +1,4 @@
+const { Decimal128 } = require('mongodb');
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
@@ -22,8 +23,33 @@ const orderSchema = new Schema ({
         type: Number,
         required: true
     },
-    //question, how do I add the quantity: Int tax: Float Total: Float carrier: String tracking_number: String carts: [Carts]
-})
+    quantity: {
+        type: Number,
+        require: true
+    },
+    tax: {
+        type: Decimal128,
+        require: true
+    },
+    total: {
+        type: Decimal128,
+        require: true
+    },
+    carrier: {
+        type: String,
+        require: true
+    },
+    trackingNumber: {
+        type: String,
+        require: true
+    },
+    cart: [
+        {
+          type: Schema.Types.ObjectId,
+          ref: ['Cart']
+        }
+      ]
+});
 
 const Order = model('Order', orderSchema);
 

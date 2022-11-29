@@ -1,5 +1,4 @@
 const { Schema, model } = require('mongoose');
-const { User } = require('.');
 const bcrypt = require('bcrypt');
 
 
@@ -18,11 +17,6 @@ const userSchema = new Schema({
       type: Number, 
       require: true
     },
-    user_name: {
-      type: String,
-      unique: true,
-      require: true
-    },
     email:{
         type: String,
         required: true,
@@ -35,10 +29,10 @@ const userSchema = new Schema({
       minlength: 5,
       maxlength: 20
     },
-    orders: [
+    order: [
       {
         type: Schema.Types.ObjectId,
-        ref: ['Carts, Orders']
+        ref: ['Cart, Order']
       }
     ]
   }
