@@ -4,19 +4,19 @@ const dateFormat = require('../utils/dateFormat');
 
 
 const cartSchema = new Schema ({
-    _id: {
+    id: {
         type: Number,
         required: true
     },
-    customer_id: {
+    customerId: {
         type: Number,
         required: true
     },
-    product_name: {
+    productName: {
         type: String,
         required: true
     },
-    product_description: {
+    productDescription: {
         type: String,
         require: true
     },
@@ -24,11 +24,11 @@ const cartSchema = new Schema ({
         type: String,
         require: true
     },
-    product_id: {
+    productId: {
         type: Number,
         require: true
     },
-    cart_date: {
+    cartDate: {
         type: Date,
         default: Date.now,
         get: (timestamp) => dateFormat(timestamp)

@@ -2,46 +2,46 @@ const {gql} = require('apollo-server-express');
 
 const typeDefs = gql `
     type Order {
-        _id: ID
+        id: ID
         payment_status: Boolean
-        customer_id: ID
-        payment_id: String
-        product_id: ID
-        order_date: scalar Date
-        delivery_date: scalar Date
+        customerId: ID
+        paymentId: String
+        productId: ID
+        orderDate: scalar Date
+        deliveryDate: scalar Date
         quantity: Int
         tax: Float
         Total: Float
         carrier: String
-        tracking_number: String
+        trackingNumber: String
         carts: [Carts]
     }
 
     type Cart {
-        _id: ID
-        product_name: String
-        product_description: String
+        id: ID
+        productName: String
+        productDescription: String
         category: String
-        customer_id: ID
-        product_id: ID
-        cart_date: scalar Date
+        customerId: ID
+        productId: ID
+        cartDate: scalar Date
         quantity: Int
-        end_user: End_user
+        user: user
     }
 
     type Product {
-        _id: ID
-        Product_name: String
-        Product_description: String
-        Stock_qty: Int
+        id: ID
+        ProductName: String
+        ProductDescription: String
+        StockQty: Int
         Price: Float
         Category: String
-        Image_link: String
-        product: End_user
+        ImageLink: String
+        product: user
     }
 
     type End_user {
-        _id: ID
+        id: ID
         Name: String
         Address: String
         City: String
@@ -49,39 +49,39 @@ const typeDefs = gql `
         zip code: String
         country: String
         telephone: String
-        date_of_birth: scalar Date
+        dateOfBirth: scalar Date
         email: String
         password: String
-        Payment_method: String
-        card_expiration: scalar Date
+        PaymentMethod: String
+        cardExpiration: scalar Date
         carts: [Carts]
         orders: [Orders] 
     }
 
     type Query {
-        end_users: [End_users]
-        end_user:username: String!): End_user
+        users: [End_users]
+        user (username: String!): User
         orders(username: String!): [Orders]
-        order:(orderId: ID!): Order
+        order (orderId: ID!): Order
         carts(username: String!): [Carts]
-        cart:(cartId: ID!): Cart
+        cart (cartId: ID!): Cart
         products: [Products]
         products(productId: ID!): [Products]
         products(username: String!): [Products]
     }
 
     type Mutation {
-        addUser(username: String!, address: String!, city: String!, state: String!, zipcode: String!, country: String!, telephone: String!, date_of_birth: scalar Date!, email: String!, password: String!): Auth
-        updateUser(username: String!, address: String!, city: String!, state: String!, zipcode: String!, country: String!, telephone: String!, date_of_birth: scalar Date!, email: String!, password: String!): User
+        addUser(username: String!, address: String!, city: String!, state: String!, zipcode: String!, country: String!, telephone: String!, dateOfBirth: scalar Date!, email: String!, password: String!): Auth
+        updateUser(username: String!, address: String!, city: String!, state: String!, zipcode: String!, country: String!, telephone: String!, dateOfBirth: scalar Date!, email: String!, password: String!): User
         login(email: String!, password: String!): Auth
-        addProduct(product_name: String!, product_description: String!, stock_qty: Int!, price: Float!, category: String!, image_link: String!): Product
-        updateProduct(_id: ID!, product_name: String!, product_description: String!, stock_qty: Int!, price: Float!, category: String!, image_link: String!) : Product
-        removeProduct(_id: ID!): Product
-        addOrder(payment_status: Boolean!, payment_id: ID!, product_id: ID! , order_date: scalar Date!, delivery_date: scalar Date!, quantity: Int!, tax: Float!, total: Float!, carrier: String!, tracking_number: String!): Order
-        updateOrder(_id: ID!, payment_status: Boolean!, payment_id: ID!, product_id: ID! , order_date: scalar Date!, delivery_date: scalar Date!, quantity: Int!, tax: Float!, total: Float!, carrier: String!, tracking_number: String!): Order)
-        addCart(product_name: String!, product_description: String!, category: String!, customer_id: ID!, product_id: ID!, cart_date: scalar Date!, quantity: Int!): Cart
-        updateCart(_id: ID!, product_name: String!, product_description: String!, category: String!, customer_id: ID!, product_id: ID!, cart_date: scalar Date!, quantity: Int!): Cart
-        removecart(_id: ID!): Cart       
+        addProduct(productName: String!, productDescription: String!, stockQty: Int!, price: Float!, category: String!, image_link: String!): Product
+        updateProduct(id: ID!, productName: String!, productDescription: String!, stockQty: Int!, price: Float!, category: String!, imageLink: String!) : Product
+        removeProduct(id: ID!): Product
+        addOrder(paymentStatus: Boolean!, paymentId: ID!, productId: ID! , orderDate: scalar Date!, deliveryDate: scalar Date!, quantity: Int!, tax: Float!, total: Float!, carrier: String!, trackingNumber: String!): Order
+        updateOrder(id: ID!, payment_status: Boolean!, payment_id: ID!, product_id: ID! , order_date: scalar Date!, delivery_date: scalar Date!, quantity: Int!, tax: Float!, total: Float!, carrier: String!, trackingNumber: String!): Order
+        addCart(product_name: String!, productDescription: String!, category: String!, customerId: ID!, productId: ID!, cartDate: scalar Date!, quantity: Int!): Cart
+        updateCart(id: ID!, productName: String!, productDescription: String!, category: String!, customerId: ID!, productId: ID!, cartDate: scalar Date!, quantity: Int!): Cart
+        removecart(id: ID!): Cart       
     }
 `;
 

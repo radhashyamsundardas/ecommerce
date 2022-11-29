@@ -1,8 +1,8 @@
 const { Schema, model } = require('mongoose');
-const { End_user } = require('.');
+const { User } = require('.');
 
 const productSchema = new Schema ({
-    _id: {
+    id: {
         type: Number,
         unique: true,
         trim: true
@@ -18,7 +18,7 @@ const productSchema = new Schema ({
         maxlength: 500,
         trim: true
     },
-    Stock_qty: {
+    StockQty: {
         type: Number,
         require: true
     },
@@ -30,7 +30,7 @@ const productSchema = new Schema ({
         type: String,
         require: true
     },
-    end_user: [
+    User: [
         {
           type: Schema.Types.ObjectId,
           ref: ['Username']
