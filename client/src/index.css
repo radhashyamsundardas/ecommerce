@@ -13,34 +13,48 @@ h2{
   justify-content: flex-end;
   justify-content: space-evenly;
 }
-#navbar{
+
+/* #navbar{
   color: #112D4E;
   font-size: 1rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:flex-end;
   text-decoration: none;
-  background-color: #DBE2EF;
+  transform: translateY(-300%);
+} */
+
+.link-to{
+  text-decoration: none;
+  color: white;
 }
 ul{
   list-style: none;
   display: flex;
-  
 }
-li{
+.nav-item{
   list-style-type:none;
   text-decoration: none;
+  padding-left:20px;
+  padding-right: 20px;
 }
 
 footer{
-  font-size: 16px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   width: 100%;
- color: white;
+  color: white;
   padding-top: 10px;
+  padding-bottom: 6px;
   position: absolute;
   bottom: 0;
-  left: 0;
   text-align: center;
   background-color: #112D4E;
+}
+
+.copywrite{
+  font-size: .5rem;
 }
 #signup{
   text-align: center;
