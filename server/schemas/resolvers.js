@@ -46,7 +46,6 @@ const resolvers = {
             zipcode,
             country,
             telephone,
-            dateOfBirth,
             email,
             password}) => {
                 const user = await User.create({    //creating a user
@@ -57,7 +56,6 @@ const resolvers = {
                     zipcode,
                     country,
                     telephone,
-                    dateOfBirth,
                     email,
                     password
                 });
@@ -74,7 +72,6 @@ const resolvers = {
                 zipcode,
                 country,
                 telephone,
-                dateOfBirth,
                 password
             }) => {
                 return await User.findOneAndUpdate(
@@ -86,7 +83,6 @@ const resolvers = {
                     {zipcode},
                     {country},
                     {telephone},
-                    {dateOfBirth},
                     {password},
                     {new: true} //return new updated object
                 )
@@ -163,8 +159,6 @@ const resolvers = {
                 paymentStatus,
                 paymentId,
                 productId, //this needs to be an array of products if more than 1
-                orderDate,
-                deliveryDate,
                 quantity,
                 tax,
                 total,
@@ -176,8 +170,6 @@ const resolvers = {
                         paymentStatus,
                         paymentId,
                         productId, //this needs to be an array of products
-                        orderDate,
-                        deliveryDate,
                         quantity,
                         tax,
                         total,
@@ -199,8 +191,6 @@ const resolvers = {
                 paymentStatus,
                 paymentId,
                 productId, //this needs to be an array of products if more than 1
-                orderDate,
-                deliveryDate,
                 quantity,
                 tax,
                 total,
@@ -212,8 +202,6 @@ const resolvers = {
                     {paymentStatus},
                     {paymentId},
                     {productId}, //this needs to be an array of products if more than 1
-                    {orderDate},
-                    {deliveryDate},
                     {quantity},
                     {tax},
                     {total},
@@ -228,7 +216,6 @@ const resolvers = {
                 category,
                 customerId,
                 productId,
-                cartDate,
                 quantity
             }, context) => {
                     if(context.user) {
@@ -237,7 +224,6 @@ const resolvers = {
                             productDescription,
                             category,
                             productId,
-                            cartDate,
                             quantity,
                             customerId: context.user.id
                         });

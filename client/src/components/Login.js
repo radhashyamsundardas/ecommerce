@@ -26,6 +26,7 @@ function App() {
   };
 
   return (
+  
     <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
 
       <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
@@ -77,7 +78,7 @@ function App() {
             <a href="!#">Forgot password?</a>
           </div>
 
-          <MDBBtn className="mb-4 w-100">Sign in</MDBBtn>
+          <MDBBtn color="info" className="mb-4 w-100">Sign in</MDBBtn>
           <p className="text-center">Not a member? <a href="#!">Register</a></p>
 
         </MDBTabsPane>
@@ -85,7 +86,7 @@ function App() {
         <MDBTabsPane show={justifyActive === 'tab2'}>
 
           <div className="text-center mb-3">
-            <p>Sign un with:</p>
+            <p>Sign in with:</p>
 
             <div className='d-flex justify-content-between mx-auto' style={{width: '40%'}}>
               <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
@@ -117,7 +118,7 @@ function App() {
             <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I have read and agree to the terms' />
           </div>
 
-          <MDBBtn className="mb-4 w-100">Sign up</MDBBtn>
+          <MDBBtn className="btn btn-info mb-4 w-100">Sign up</MDBBtn>
 
         </MDBTabsPane>
 
