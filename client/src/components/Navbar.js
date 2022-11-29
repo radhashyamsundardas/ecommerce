@@ -1,65 +1,47 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../imgs/default.png";
+
+const styles = {
+  pic: {
+    width: "200px",
+    left: "5",
+  },
+};
 
 export default function bar() {
   return (
-    <div >
-                <div >
-                    <h1>ECOMMERCE COMPANY LOGO</h1>
-                </div>
-            
-            <ul id="navbar"class="bar- ml-auto item-indent">
-                <li class="-item">
+    <header>
+      <ul id="navbar" class="bar- ml-auto item-indent">
+        <img style={styles.pic} src={logo} alt="Company logo" />
+        <li class="-item">
+          <Link to="/Home">
+            <img
+              src="https://www.freeiconspng.com/uploads/yellow-house-clip-art-png-20.png"
+              height={20}
+            ></img>
+          </Link>
+        </li>
+        <li class="-item">
+          <Link to="/Treadmills">TREADMILLS</Link>
+        </li>
 
-              
+        <li class="-item">
+          <Link to="/Bikes">BIKES</Link>
+        </li>
 
-                    <Link to="/Home">
-                        <div >
-                            <h2><img src='https://www.freeiconspng.com/uploads/yellow-house-clip-art-png-20.png' height={30}></img></h2>
-                        </div>
-                    </Link>
-                </li>
-                <li class="-item">
-                    <Link to="/Treadmills">
-                        <div >
-                            <h2>TREADMILLS</h2>
-                        </div>
-                    </Link>
-                </li>
+        <li class="-item">
+          <Link to="/Shoes">SHOES</Link>
+        </li>
 
-                <li class="-item">
-                    <Link to="/Bikes">
-                        <div >
-                            <h2>BIKES</h2>
-                        </div>
-                    </Link>
-                </li>
+        <li class="-item">
+          <Link to="/Contactus">CONTACT US</Link>
+        </li>
 
-                <li class="-item">
-                    <Link to="/Shoes">
-                        <div >
-                            <h2>SHOES</h2>
-                        </div>
-                    </Link>
-                </li>
-
-                <li class="-item">
-                    <Link to="/Contactus">
-                        <div >
-                            <h2>CONTACT US</h2>
-                        </div>
-                    </Link>
-                </li>
-
-                <li class="-item">
-                    <Link to="/LOGIN">
-                        <div >
-                            <h2>LOGIN/SIGN UP</h2>
-                        </div>
-                    </Link>
-                </li>
-            </ul>
-
-    </div>
-  )
+        <li class="-item">
+          <Link to="/LOGIN">LOGIN/SIGN UP</Link>
+        </li>
+      </ul>
+    </header>
+  );
 }

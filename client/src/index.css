@@ -1,18 +1,12 @@
 body{
-  background-image: url('https://e7.pngegg.com/pngimages/977/736/png-clipart-the-olympic-rings-rings-olympic.png');
+
+  background: #F9F7F7 ;
 
   background-size: cover;
-  color: black;
+}
 
-  
-}
-div{
-  color: rgb(10, 12, 12);
-  
-}
 h2{
   text-align: center;
-  color: black;
   display: flex; 
   list-style: none;
   text-align: right;
@@ -20,10 +14,12 @@ h2{
   justify-content: space-evenly;
 }
 #navbar{
+  color: #112D4E;
+  font-size: 1rem;
   display: flex;
-  justify-content: flex-end;
   justify-content: space-evenly;
-  list-style: none;
+  text-decoration: none;
+  background-color: #DBE2EF;
 }
 ul{
   list-style: none;
@@ -31,15 +27,20 @@ ul{
   
 }
 li{
-  text-align: center;
-  
+  list-style-type:none;
+  text-decoration: none;
 }
+
 footer{
-  font-size: medium;
-  display: flex;
-  justify-content: flex-end;
-  justify-content: space-evenly; 
-  padding-top: 420px;
+  font-size: 16px;
+  width: 100%;
+ color: white;
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: #112D4E;
 }
 #signup{
   text-align: center;
@@ -63,9 +64,13 @@ padding-left: 50px;
 h3,h4{
   text-align: center;
 }
+
 Button{
   background-color: rgb(66, 202, 77);
   color: white;
   padding: 5px;
   
+}
+#{
+background-color: red;
 }
