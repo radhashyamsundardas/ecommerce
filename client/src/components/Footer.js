@@ -1,51 +1,66 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../imgs/default.png";
+
+const styles = {
+  pic: {
+    height: "200px",
+    // padding: "0",
+    // margin: "0",
+    // top: "0",
+    // left: "0",
+    // transform: "translateY(-15%)"
+  },
+};
+
 
 function Footer() {
   return (
     <footer className="page-footer text-center font-small bg-dark pt-2">
       <div className="container-fluid text-sm-left" >
+      
       <div className="row">
-        <Link className ="nav-item" to="/SalesAssitance">SALES ASSISTANCE</Link>
-        {/* <ul>
+        <div className="col">
+        <ul>
+          <li>SALES ASSISTANCE</li>
           <li>Call us at 888-888-8888</li>
-
           <li>
             Office Hours:
             <br /> Monday-Friday: 9AM-5PM EST
           </li>
-        </ul> */}
+        </ul>
       </div>
 
-      <div >
-        <Link className ="nav-item" to="/CustomerService">CUSTOMER SERVICE</Link>
-        {/* <ul>
+      <div className="col">
+        <ul>
+        <li>CUSTOMER SERVICE</li>
           <li>Power Rack Comparison</li>
           <li>Contact Us</li>
           <li>Warranty</li>
           <li>Return Policy</li>
           <li>Shipping Policy</li>
-        </ul> */}
+        </ul>
       </div>
 
-      <div>
-        <Link className ="nav-item" to="/Account">ACCOUNT</Link>
-        {/* <ul>
+      <div className="col">
+        <ul>
+        <li>ACCOUNT</li>
           <li>My Account</li>
           <li>Track Order</li>
           <li>Reward Points</li>
           <li>Privacy</li>
-        </ul> */}
+        </ul>
       </div>
 
-      <div>
-        <Link className ="nav-item" to="/About">ABOUT</Link>
-        {/* <ul>
+      <div className="col">
+        <ul>
+        <li>ABOUT</li>
           <li>About Us</li>
           <li>Careers</li>
           <li>New Product Request</li>
           <li>Financing</li>
-        </ul> */}
+        </ul>
+      </div>
       </div>
       </div>
 
