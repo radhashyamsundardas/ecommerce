@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 function Product() {
   return (
     <div>
+       <div className="card-container">
       <Card style={{ width: '18rem', height: '25rem' }}>
 
         <Card.Img variant="top" src="https://staticprod.site.flexispot.com/cdn-cgi/image/dpr=1,format=webp,fit=pad/https://staticprod.site.flexispot.com/flexispot/catalog/product/v/9/v91207.jpg" height={200} />
@@ -130,6 +131,7 @@ function Product() {
         </Card.Body>
       </Card>
 
+    </div>
     </div>
 
   );

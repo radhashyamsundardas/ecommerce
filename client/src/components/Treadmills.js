@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 
 function Treadmills() {
   return (
-    <div >
+    <div>
+      <div className="card-container">
 
     <Card style={{ width: '18rem',height:'25rem' }}>
     <Card.Img variant="top" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcREGdoAxg_zjQu5d7kXg0LyO2hhQUI-WM8iBcN0UuTcWxtmsfPtHUDBS9-xS6mSE9bccWLMhwIbReB3W90KAwMiWUkSOuiy4eRvgApyst00LdqtDrueYFKq&usqp=CAE" height={200}/>
@@ -22,6 +23,7 @@ You Save:	$60.00 (17%)</h6>
 
       <Button variant="primary">ADD TO CART</Button>
     </Card.Body>
+    
   </Card>
 
 
@@ -63,7 +65,7 @@ You Save:	$299.00 (30%)</h6>
 </Card>
 
 
-<Card style={{ width: '18rem',height:'25rem' }}>
+<Card style={{ width: '18rem',height:'25rem'}}>
 
 <Card.Img variant="top" src="https://m.media-amazon.com/images/I/61A8SWFcfML._AC_SX679_.jpg" height={200}/>
 
@@ -159,7 +161,7 @@ You Save:	$20.00 (12%)</h6>
     </div>
 
 
-
+</div>
 
 
 
