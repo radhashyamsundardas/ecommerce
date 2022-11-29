@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
   
 export default function Home() {
   return (
-    <div style={{ display: 'block', width: 1000, paddingLeft: 300 }}>
+    <div style={{ textAlign: 'center', width: 500, border: 'solid black 2px', aspectRatio: 7/5, borderRadius: 5, margin: 20, transform: 'translateX(100%)'}}>
       <h4>Deals of the week</h4>
       <Carousel>
         <Carousel.Item interval={8000}>

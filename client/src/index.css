@@ -1,7 +1,7 @@
 body{
 
   background: #F9F7F7 ;
-
+ height: 100vh;
   background-size: cover;
 }
 
@@ -30,6 +30,10 @@ h2{
 ul{
   list-style: none;
   display: flex;
+  color: white;
+  font-size:.8rem;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .nav-item{
   list-style-type:none;
@@ -56,10 +60,11 @@ padding-left: 50px;
 
 }
 
-#home{
-
-/* text-align: center; */
+.card-container{
+  display: flex;
+  flex-direction: row;
 }
+
 h3,h4{
   text-align: center;
 }
