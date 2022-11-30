@@ -26,7 +26,7 @@ export default function Home() {
             className="d-block w-100"
             src="https://totalbodyexperts.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/5/_/5_2.png"
             height={400}
-            alt="Image One"
+            alt=" random one"
           />
           {/* <Carousel.Caption>
             <h3>Label for first slide</h3>
@@ -38,7 +38,7 @@ export default function Home() {
             className="d-block w-100"
             src="https://m.media-amazon.com/images/I/71MHeFRk30L._AC_SX679_.jpg"
             height={400}
-            alt="Image Two"
+            alt="random two"
           />
           {/* <Carousel.Caption>
             <h3>Label for second slide</h3>
@@ -50,7 +50,7 @@ export default function Home() {
             className="d-block w-100"
             src="https://m.media-amazon.com/images/I/71Ii1NiUdIL._AC_SX679_.jpg"
             height={400}
-            alt="Image One"
+            alt="randomthree"
           />
           {/* <Carousel.Caption>
             <h3>Label for first slide</h3>
@@ -62,7 +62,7 @@ export default function Home() {
             className="d-block w-100"
             src="https://m.media-amazon.com/images/I/41rG5yj0hoL._AC_SX679_.jpg"
             height={400}
-            alt="Image One"
+            alt="randomfour"
           />
           {/* <Carousel.Caption>
             <h3>Label for first slide</h3>
@@ -74,7 +74,7 @@ export default function Home() {
             className="d-block w-100"
             src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTZx9OMYz8NJZ0P8wHHWccWpapimO6rmOz6S6D1FYz6GCjVsqx3VnTIbuuHlJviK-ju2dDcdy6kCjwhBOdZZ31P5ftxhmwWzgIUgo22k5U&usqp=CAE"
             height={400}
-            alt="Image One"
+            alt="randomfive"
           />
           {/* <Carousel.Caption>
             <h3>Label for first slide</h3>
