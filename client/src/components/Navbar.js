@@ -42,6 +42,7 @@ export default function bar() {
             <li className="nav-item active">
               <Link className="link-to" to="/LOGIN">LOGIN/SIGN UP</Link>
             </li>
+            
 
 
             <li className="nav-item active">
