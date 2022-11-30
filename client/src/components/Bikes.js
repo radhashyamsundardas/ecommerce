@@ -1,3 +1,26 @@
+
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+
+const style = {
+  body: {
+    width: "18rem",
+    height: "28rem",
+    boxShadow:
+      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+  },
+};
+
+
+function Product() {
+  return (
+    <div>
+      <div className="card-container">
+        
+      <Card style= {style.body}>
+
+
+
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -6,6 +29,7 @@ function Product() {
     <div>
        <div className="card-container">
       <Card style={{ width: '18rem', height: '25rem' }}>
+
         <Card.Img variant="top" src="https://staticprod.site.flexispot.com/cdn-cgi/image/dpr=1,format=webp,fit=pad/https://staticprod.site.flexispot.com/flexispot/catalog/product/v/9/v91207.jpg" height={200} />
         <Card.Body>
           <Card.Title>Home office All-in-One</Card.Title>
