@@ -15,18 +15,6 @@ const style = {
 function Product() {
   return (
     <div>
-      <div className="card-container">
-        
-      <Card style= {style.body}>
-
-
-
-import React from 'react'
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-function Product() {
-  return (
-    <div>
        <div className="card-container">
       <Card style={{ width: '18rem', height: '25rem' }}>
 
