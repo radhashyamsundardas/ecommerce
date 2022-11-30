@@ -1,11 +1,71 @@
-export const UPDATE_PRODUCTS = "UPDATE_PRODUCTS";
+import React from "react";
+import {UseStoreContext} from '../utils/GlobalState'
+import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../utils/action";
+import { idbPromise } from "../utils/helper";
 
-export const ADD_TO_CART = "ADD_TO_CART";
-export const ADD_MULTIPLE_TO_CART = "ADD_MULTIPLE_TO_CART";
-export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
-export const CLEAR_CART = "CLEAR_CART";
-export const UPDATE_CART_QUANTITY = "UPDATE_CART_QUANTITY";
-export const TOGGLE_CART = "TOGGLE_CART";
 
-export const UPDATE_CATEGORIES = "UPDATE_CATEGORIES";
-export const UPDATE_CURRENT_CATEGORY = "UPDATE_CURRENT_CATEGORY";
+ const cartItem = ({item}) => {
+    const [, dispatch] = useStoreContext();
+
+    const removeFromCart = item => {
+      dispatch({
+        type: REMOVE_FROM_CART,
+        _id: item._id
+      });
+      idbPromise('cart', 'delete', { ...item });
+  
+    };
+  
+    const onChange = (e) => {
+      const value = e.target.value;
+      if (value === '0') {
+        dispatch({
+          type: REMOVE_FROM_CART,
+          _id: item._id
+        });
+        idbPromise('cart', 'delete', { ...item });
+  
+      } else {
+        dispatch({
+          type: UPDATE_CART_QUANTITY,
+          _id: item._id,
+          purchaseQuantity: parseInt(value)
+        });
+        idbPromise('cart', 'put', { ...item, purchaseQuantity: parseInt(value) });
+  
+      }
+    }
+  
+    return (
+      <div className="flex-row">
+        <div>
+          <img
+            src={`/images/${item.image}`}
+            alt=""
+          />
+        </div>
+        <div>
+          <div>{item.name}, ${item.price}</div>
+          <div>
+            <span>Qty:</span>
+            <input
+              type="number"
+              placeholder="1"
+              value={item.purchaseQuantity}
+              onChange={onChange}
+            />
+            <span
+              role="img"
+              aria-label="trash"
+              onClick={() => removeFromCart(item)}
+            >
+              🗑️
+            </span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  
+  export default cartItem;
+
