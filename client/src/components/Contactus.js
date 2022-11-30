@@ -6,6 +6,7 @@ const styles = {
   container: {
     background: "white",
   },
+}
 
 
 function Contactus() {
