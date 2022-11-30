@@ -5,5 +5,4 @@ function Cartitem() {
     <div>Cartitem</div>
   )
 }
-
 export default Cartitem
