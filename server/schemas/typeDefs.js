@@ -72,10 +72,10 @@ const typeDefs = gql `
         updateProduct(id: ID!, productName: String!, productDescription: String!, stockQty: Int!, price: Float!, category: String!, imageLink: String!) : Product
         removeProduct(id: ID!): Product
         addOrder(paymentStatus: Boolean!, paymentId: ID!, productId: ID! , quantity: Int!, tax: Float!, total: Float!, carrier: String!, trackingNumber: String!): Order
-        updateOrder(id: ID!, payment_status: Boolean!, payment_id: ID!, product_id: ID! , quantity: Int!, tax: Float!, total: Float!, carrier: String!, trackingNumber: String!): Order
+        updateOrder(id: ID!, paymentStatus: Boolean!, paymentId: ID!, productId: ID! , quantity: Int!, tax: Float!, total: Float!, carrier: String!, trackingNumber: String!): Order
         addCart(product_name: String!, productDescription: String!, category: String!, customerId: ID!, productId: ID!, quantity: Int!): Cart
         updateCart(id: ID!, productName: String!, productDescription: String!, category: String!, customerId: ID!, productId: ID!, quantity: Int!): Cart
-        removecart(id: ID!): Cart       
+        removeCart(id: ID!): Cart       
     }
 `;
 
