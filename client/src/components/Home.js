@@ -6,19 +6,22 @@ export default function Home() {
   return (
     <div
       style={{
+        background: "white",
         textAlign: "center",
         width: 500,
-        border: "solid black 2px",
+
         aspectRatio: 7 / 5,
         borderRadius: 5,
         margin: "auto",
-        marginTop: 20,
-        marginBottom: 20,
+        marginTop: 40,
+        marginBottom: 40,
+        boxShadow:
+          "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
       }}
     >
       <h4>Deals of the week</h4>
       <Carousel>
-        <Carousel.Item interval={8000}>
+        <Carousel.Item interval={5000}>
           <img
             className="d-block w-100"
             src="https://totalbodyexperts.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/5/_/5_2.png"
@@ -30,7 +33,7 @@ export default function Home() {
             <p>Sample Text for Image One</p>
           </Carousel.Caption> */}
         </Carousel.Item>
-        <Carousel.Item interval={800}>
+        <Carousel.Item interval={5000}>
           <img
             className="d-block w-100"
             src="https://m.media-amazon.com/images/I/71MHeFRk30L._AC_SX679_.jpg"
@@ -42,7 +45,7 @@ export default function Home() {
             <p>Sample Text for Image Two</p>
           </Carousel.Caption> */}
         </Carousel.Item>
-        <Carousel.Item interval={8000}>
+        <Carousel.Item interval={5000}>
           <img
             className="d-block w-100"
             src="https://m.media-amazon.com/images/I/71Ii1NiUdIL._AC_SX679_.jpg"
@@ -54,7 +57,7 @@ export default function Home() {
             <p>Sample Text for Image One</p>
           </Carousel.Caption> */}
         </Carousel.Item>
-        <Carousel.Item interval={8000}>
+        <Carousel.Item interval={5000}>
           <img
             className="d-block w-100"
             src="https://m.media-amazon.com/images/I/41rG5yj0hoL._AC_SX679_.jpg"
@@ -66,7 +69,7 @@ export default function Home() {
             <p>Sample Text for Image One</p>
           </Carousel.Caption> */}
         </Carousel.Item>
-        <Carousel.Item interval={8000}>
+        <Carousel.Item interval={5000}>
           <img
             className="d-block w-100"
             src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTZx9OMYz8NJZ0P8wHHWccWpapimO6rmOz6S6D1FYz6GCjVsqx3VnTIbuuHlJviK-ju2dDcdy6kCjwhBOdZZ31P5ftxhmwWzgIUgo22k5U&usqp=CAE"

@@ -4,7 +4,8 @@ import logo from "../imgs/default.png";
 
 const styles = {
   pic: {
-    height: "200px",
+    height: "220px",
+    transform: "translateX(-15%)",
   },
 };
 
@@ -36,7 +37,7 @@ export default function bar() {
 
             <li className="nav-item">
               <Link className="link-to" to="/Shoes">
-                SHOES
+                LIFTING EQUIPMENT
               </Link>
             </li>
 

@@ -1,18 +1,17 @@
 import React from "react";
 import { useEffect } from "react";
-import {loadStripe, LoadStripe} from '@stripe/stripe-js';
-import {useLazyQuery} from '@apollo/client';
-import { QUERY_CHECKOUT } from '../utils/queries';
-import { idbPromise } from '../utils/helper';
+import { loadStripe, LoadStripe } from "@stripe/stripe-js";
+import { useLazyQuery } from "@apollo/client";
+import { QUERY_CHECKOUT } from "../utils/queries";
+import { idbPromise } from "../utils/helper";
 // import CartItem from '../CartItem';
 // import Auth from '../../utils/auth';
-import { useStoreContext } from '../utils/GlobalState';
-import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../utils/action';
+import { useStoreContext } from "../utils/GlobalState";
+import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../utils/action";
 
+const stripeProm = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
-const stripeProm = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
-
-function Cart (){
+function Cart() {
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
@@ -26,7 +25,7 @@ function Cart (){
 
   useEffect(() => {
     async function getCart() {
-      const cart = await idbPromise('cart', 'get');
+      const cart = await idbPromise("cart", "get");
       dispatch({ type: ADD_MULTIPLE_TO_CART, products: [...cart] });
     }
 
@@ -80,12 +79,11 @@ function Cart (){
       {state.cart.length ? (
         <div>
           {/* {state.cart.map((item) => ( */}
-            {/* // <CartItem key={item._id} item={item} /> */}
+          {/* // <CartItem key={item._id} item={item} /> */}
           ))}
-
           <div className="flex-row space-between">
             <strong>Total: ${calculateTotal()}</strong>
-{/* 
+            {/* 
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>
             ) : (
@@ -94,13 +92,10 @@ function Cart (){
           </div>
         </div>
       ) : (
-        <h3>
-          
-          No Items in the cart
-        </h3>
+        <h3>No Items in the cart</h3>
       )}
     </div>
   );
-};
+}
 
 export default Cart;
