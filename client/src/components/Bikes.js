@@ -2,28 +2,21 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-const style = {
-  body: {
-    width: "18rem",
-    height: "28rem",
-    boxShadow:
-      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-  },
-};
-
-
-function Product() {
-  return (
-    <div>
-      <div className="card-container">
-        
-      <Card style= {style.body}>
+// const style = {
+//   body: {
+//     width: "18rem",
+//     height: "28rem",
+//     boxShadow:
+//       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+//   },
+// };
 
 
 
-import React from 'react'
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+
+
+
+
 function Product() {
   return (
     <div>

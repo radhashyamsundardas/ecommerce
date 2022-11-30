@@ -1,17 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../imgs/default.png";
+// import { Link } from "react-router-dom";
+// import logo from "../imgs/default.png";
 
-const styles = {
-  pic: {
-    height: "200px",
-    // padding: "0",
-    // margin: "0",
-    // top: "0",
-    // left: "0",
-    // transform: "translateY(-15%)"
-  },
-};
+// const styles = {
+//   pic: {
+//     height: "200px",
+//     // padding: "0",
+//     // margin: "0",
+//     // top: "0",
+//     // left: "0",
+//     // transform: "translateY(-15%)"
+//   },
+// };
 
 
 function Footer() {
