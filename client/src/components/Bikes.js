@@ -14,9 +14,6 @@ import Button from "react-bootstrap/Button";
 
 
 
-
-
-
 function Product() {
   return (
     <div>
