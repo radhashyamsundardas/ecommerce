@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import {loadStripe, LoadStripe} from '@stripe/stripe-js';
+// import {loadStripe, LoadStripe} from '@stripe/stripe-js';
 import {useLazyQuery} from '@apollo/client';
 import { QUERY_CHECKOUT } from '../utils/queries';
 import { idbPromise } from '../utils/helper';
@@ -47,8 +47,8 @@ function Cart (){
     return sum.toFixed(2);
   }
 
-  function submitCheckout() {
-    const productIds = [];
+  // function submitCheckout() {
+  //   const productIds = [];
 
     state.cart.forEach((item) => {
       for (let i = 0; i < item.purchaseQuantity; i++) {
