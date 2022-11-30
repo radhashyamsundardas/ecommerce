@@ -10,19 +10,19 @@ import { useStoreContext } from '../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../utils/action';
 
 
-const stripeProm = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+// const stripeProm = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 function Cart (){
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
-  useEffect(() => {
-    if (data) {
-      stripeProm.then((res) => {
-        res.redirectToCheckout({ sessionId: data.checkout.session });
-      });
-    }
-  }, [data]);
+  // useEffect(() => {
+  //   if (data) {
+  //     // stripeProm.then((res) => {
+  //       res.redirectToCheckout({ sessionId: data.checkout.session });
+  //     });
+  //   }
+  // }, [data]);
 
   useEffect(() => {
     async function getCart() {
@@ -50,57 +50,57 @@ function Cart (){
   // function submitCheckout() {
   //   const productIds = [];
 
-    state.cart.forEach((item) => {
-      for (let i = 0; i < item.purchaseQuantity; i++) {
-        productIds.push(item._id);
-      }
-    });
+    // state.cart.forEach((item) => {
+    //   for (let i = 0; i < item.purchaseQuantity; i++) {
+    //     productIds.push(item._id);
+    //   }
+    // });
 
-    getCheckout({
-      variables: { products: productIds },
-    });
+    // getCheckout({
+    //   variables: { products: productIds },
+    // });
   }
 
-  if (!state.cartOpen) {
-    return (
-      <div className="cart-closed" onClick={toggleCart}>
-        <span role="img" aria-label="trash">
-          🛒
-        </span>
-      </div>
-    );
-  }
+  // if (!state.cartOpen) {
+  //   return (
+  //     <div className="cart-closed" onClick={toggleCart}>
+  //       <span role="img" aria-label="trash">
+  //         🛒
+  //       </span>
+  //     </div>
+  //   );
+  // }
 
-  return (
-    <div className="cart">
-      <div className="close" onClick={toggleCart}>
-        [close]
-      </div>
-      <h2>Shopping Cart</h2>
-      {state.cart.length ? (
-        <div>
-          {/* {state.cart.map((item) => ( */}
-            {/* // <CartItem key={item._id} item={item} /> */}
-          ))}
+//   return (
+//     <div className="cart">
+//       <div className="close" onClick={toggleCart}>
+//         [close]
+//       </div>
+//       <h2>Shopping Cart</h2>
+//       {state.cart.length ? (
+//         <div>
+//           {/* {state.cart.map((item) => ( */}
+//             {/* // <CartItem key={item._id} item={item} /> */}
+//           ))}
 
-          <div className="flex-row space-between">
-            <strong>Total: ${calculateTotal()}</strong>
-{/* 
-            {Auth.loggedIn() ? (
-              <button onClick={submitCheckout}>Checkout</button>
-            ) : (
-              <span>(log in to check out)</span>
-            )} */}
-          </div>
-        </div>
-      ) : (
-        <h3>
+//           <div className="flex-row space-between">
+//             <strong>Total: ${calculateTotal()}</strong>
+// {/* 
+//             {Auth.loggedIn() ? (
+//               <button onClick={submitCheckout}>Checkout</button>
+//             ) : (
+//               <span>(log in to check out)</span>
+//             )} */}
+//           </div>
+//         </div>
+//       ) : (
+//         <h3>
           
-          No Items in the cart
-        </h3>
-      )}
-    </div>
-  );
-};
+//           No Items in the cart
+//         </h3>
+//       )}
+//     </div>
+//   );
+// };
 
 export default Cart;
