@@ -8,19 +8,24 @@ import Footer from './components/Footer';
 import Bikes from './components/Bikes'
 import Shoes from './components/Shoes';
 import Login from './components/Login';
-
+import Cart from './components/cart';
+import { useState } from 'react';
 
 const App = () => {
   return (
+    
     <Router>
       <div> <Navbar /></div>
       <Routes>
-      <Route path='/home' element={<Home />}></Route>
+      <Route path='/' element={<Home />}></Route>
       <Route path='/Treadmills' element={<Treadmills />}></Route>
       <Route path='/Contactus' element={<Contactus />}></Route>
       <Route path='/Bikes' element={<Bikes />}></Route>
       <Route path='/Shoes' element={<Shoes />}></Route>
       <Route path='/Login' element={<Login />}></Route>
+      <Route path='/cart' element={<Cart />}></Route>
+
+
 
 
 
