@@ -1,4 +1,5 @@
 
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
@@ -13,29 +14,63 @@ import Button from "react-bootstrap/Button";
 
 
 
-
 function Product() {
   return (
     <div>
-       <div className="card-container">
-      <Card style={{ width: '18rem', height: '25rem' }}>
 
-        <Card.Img variant="top" src="https://staticprod.site.flexispot.com/cdn-cgi/image/dpr=1,format=webp,fit=pad/https://staticprod.site.flexispot.com/flexispot/catalog/product/v/9/v91207.jpg" height={200} />
-        <Card.Body>
-          <Card.Title>Home office All-in-One</Card.Title>
-          {/* <Card.Text>
+      <div className="card-container">
+        <Card style={style.body}>
+          <Card.Img
+            variant="top"
+            src="https://staticprod.site.flexispot.com/cdn-cgi/image/dpr=1,format=webp,fit=pad/https://staticprod.site.flexispot.com/flexispot/catalog/product/v/9/v91207.jpg"
+            height={200}
+          />
+          <Card.Body>
+            <Card.Title>Home office All-in-One</Card.Title>
+
+            <>
+              <h6>
+                Was: $499.00 <br /> Price: $369.98 <br /> You Save: $130.00
+                (22%){" "}
+              </h6>
+              <Button variant="primary">ADD TO CART</Button>
+            </>
+          </Card.Body>
+        </Card>
+        <Card style={style.body}>
+          <Card.Img
+            variant="top"
+            src="https://staticprod.site.flexispot.com/cdn-cgi/image/dpr=1,format=webp,fit=pad/https://staticprod.site.flexispot.com/flexispot/catalog/product/v/9/v91207.jpg"
+            height={200}
+          />
+
+          <Card.Body>
+            <Card.Title>Home office All-in-One</Card.Title>
+            {/* <Card.Text>
   </Card.Text> */}
-          <h6>Was:  $499.00<br />
-            Price:  $369.98<br />
-            You Save: $130.00 (22%)</h6>
-          <Button variant="primary">ADD TO CART</Button>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: '18rem', height: '25rem' }}>
-        <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/0449/8453/3153/products/whitebike_900x.jpg?v=1637667138" height={200} />
-        <Card.Body>
-          <Card.Title>IFAST Magnetic Silent Stationary Bike</Card.Title>
-          {/* <Card.Text>
+            <h6>
+              Was: $499.00
+              <br />
+              Price: $369.98
+              <br />
+              You Save: $130.00 (22%)
+            </h6>
+
+            <Button variant="primary">ADD TO CART</Button>
+          </Card.Body>
+        </Card>
+
+        <Card style={style.body}>
+          <Card.Img
+            variant="top"
+            src="https://cdn.shopify.com/s/files/1/0449/8453/3153/products/whitebike_900x.jpg?v=1637667138"
+            height={200}
+          />
+
+          <Card.Body>
+            <Card.Title>IFAST Magnetic Silent Stationary Bike</Card.Title>
+            {/* <Card.Text>
+
   </Card.Text> */}
           <h6>Was:  $369.00<br />
             Price:  $309.00<br />
