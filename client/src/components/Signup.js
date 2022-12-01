@@ -33,7 +33,8 @@ function Signup(props) {
   };
 
   return (
-    <div className="container my-1">
+    <div className="login-container">
+    <div className="p-4 my-2 d-flex flex-column ">
       <Link to="/login">← Go to Login</Link>
 
       <h2>Signup</h2>
@@ -90,6 +91,7 @@ function Signup(props) {
           <button type="submit">Submit</button>
         </div>
       </form>
+      </div>
     </div>
   );
 }

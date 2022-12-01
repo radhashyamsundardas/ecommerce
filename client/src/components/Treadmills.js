@@ -16,6 +16,30 @@ function Treadmills() {
     <div>
       <div className="top-card">TREADMILLS</div>
       <div className="card-container">
+      <Card style={style.body}>
+          <Card.Img
+            variant="top"
+            src="https://appravo.com/wp-content/uploads/2022/07/d0102hp3mea.jpg"
+            height={200}
+          />
+
+          <Card.Body>
+            <Card.Title>FYC Folding Treadmills for Home</Card.Title>
+            {/* <Card.Text>
+  Wide Tread Belt, EKG Grip Pulse Sensor, Easy Assembly Home Motorized Running Machine with 12 Preset Program, 240 lbs, S1681
+
+  </Card.Text> */}
+            <h6>
+              Was: $289.00
+              <br />
+              Price: $249.00
+              <br />
+              You Save: $40.00 (14%)
+            </h6>
+
+           <a target="_blank" href="https://www.walmart.com/ip/FYC-1-5HP-Foldable-Portable-Treadmill-Home-Electric-Motorized-Running-Machine-Heart-Rate-Sensor-Gym-Home-Fitness-Workout-Jogging-Walking-Easily-Insta/1287262370"> <Button variant="primary">ADD TO CART</Button></a>
+          </Card.Body>
+        </Card>
         <Card style={style.body}>
           <Card.Img
             variant="top"
@@ -37,7 +61,7 @@ Integrated tablet holder: keeps your tablet secure and conveniently close; Tread
               You Save: $60.00 (17%)
             </h6>
 
-            <Button variant="primary">ADD TO CART</Button>
+            <a target="_blank" href="https://www.walmart.com/ip/Weslo-Cadence-G-5-9i-Folding-Treadmill-iFit-Compatible-with-Manually-Adjustable-Incline/45799822?wmlspartner=wlpa&selectedSellerId=0&http://clickserve.dartsearch.net/link/click?lid=92700060762254883&ds_s_kwgid=58700006715445296&ds_s_inventory_feed_id=97700000003583668&ds_a_cid=654818135&ds_a_caid=13956209185&ds_a_agid=126452889113&ds_a_lid=pla-1392082700544&ds_a_cid=116919406&ds_a_caid=361575031&ds_a_agid=1200667322826314&ds_a_fiid=&ds_a_lid=pla-4578641339573147&&ds_e_adid=&ds_e_matchtype=search&ds_e_device=c&ds_e_network=s&ds_e_product_group_id=4578641339573147&ds_e_product_id=45799822_0&ds_e_product_merchant_id=27449&ds_e_product_country=US&ds_e_product_language=EN&ds_e_product_channel=Online&ds_e_product_store_id=&ds_url_v=2&ds_dest_url=?adid=2222222242031946843&wmlspartner=wmtlabs&wl0=e&wl1=s&wl2=c&wl3=&wl4=pla-4578641339573147&wl5=&wl6=&wl7=&wl8=%7baceid%7d&wl9=&wl10=27449&wl11=Online&wl12=45799822_0&wl13=&veh=sem_LIA&msclkid=9efac4ec836119b83bd3a76585ecd4af&gclid=9efac4ec836119b83bd3a76585ecd4af&gclsrc=3p.ds"><Button variant="primary">ADD TO CART</Button></a>
           </Card.Body>
         </Card>
 
@@ -135,31 +159,6 @@ Integrated tablet holder: keeps your tablet secure and conveniently close; Tread
               Price: $269.00
               <br />
               You Save: $300.00 (51%)
-            </h6>
-
-            <Button variant="primary">ADD TO CART</Button>
-          </Card.Body>
-        </Card>
-
-        <Card style={style.body}>
-          <Card.Img
-            variant="top"
-            src="https://appravo.com/wp-content/uploads/2022/07/d0102hp3mea.jpg"
-            height={200}
-          />
-
-          <Card.Body>
-            <Card.Title>FYC Folding Treadmills for Home</Card.Title>
-            {/* <Card.Text>
-  Wide Tread Belt, EKG Grip Pulse Sensor, Easy Assembly Home Motorized Running Machine with 12 Preset Program, 240 lbs, S1681
-
-  </Card.Text> */}
-            <h6>
-              Was: $289.00
-              <br />
-              Price: $249.00
-              <br />
-              You Save: $40.00 (14%)
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>

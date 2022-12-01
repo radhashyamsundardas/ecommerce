@@ -41,9 +41,21 @@ function Product() {
               You Save: $130.00 (22%)
             </h6>
 
-            <Button variant="primary">ADD TO CART</Button>
+            <a target="_blank" href="https://flexispot.ph/product/all-in-one-desk-bike-deskcise-pro-v9/"> <Button variant="primary">ADD TO CART</Button></a>
           </Card.Body>
         </Card>
+        <Card style={style.body}>
+        <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/0592/3766/2905/products/sku_-cyber-monday-extended-P4_1000x.png?v=1669795124" height={220} />
+        <Card.Body>
+          <Card.Title>Lit Bike Aurora Pink</Card.Title>
+          {/* <Card.Text>
+  </Card.Text> */}
+          <h6>Was:  $1799.00<br />
+            Price:  $1049.98<br />
+            You Save: $749.00 (40%)</h6>
+          <a target="_blank" href="https://www.freebeatfit.com/products/lit-bike-klarna-limited-edition"><Button variant="primary">ADD TO CART</Button></a>
+        </Card.Body>
+      </Card>
 
         <Card style={style.body}>
           <Card.Img
@@ -60,18 +72,6 @@ function Product() {
           <h6>Was:  $369.00<br />
             Price:  $309.00<br />
             You Save: $50.00 (15%)</h6>
-          <Button variant="primary">ADD TO CART</Button>
-        </Card.Body>
-      </Card>
-      <Card style={style.body}>
-        <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/0592/3766/2905/products/sku_-cyber-monday-extended-P4_1000x.png?v=1669795124" height={220} />
-        <Card.Body>
-          <Card.Title>Lit Bike Aurora Pink</Card.Title>
-          {/* <Card.Text>
-  </Card.Text> */}
-          <h6>Was:  $1799.00<br />
-            Price:  $1049.98<br />
-            You Save: $749.00 (40%)</h6>
           <Button variant="primary">ADD TO CART</Button>
         </Card.Body>
       </Card>
