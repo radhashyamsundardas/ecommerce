@@ -85,7 +85,27 @@ padding: 15px;
   margin: 20px;
 }
 
+.top-card{
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-left:20px;
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  width: 95%;
+  border-radius: 0px 5px 5px 0px;
+}
 
+.media{
+  margin: auto;
+  border-top: solid white 2px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 20vw;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 h3,h4{
   text-align: center;

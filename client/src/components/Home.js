@@ -11,7 +11,7 @@ export default function Home() {
         color: 'white',
         textAlign: "center",
         height: 500,
-        width:700,
+        width:850,
         borderRadius: 5,
         margin: "auto",
         paddingTop: 20,
@@ -21,7 +21,8 @@ export default function Home() {
           "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
       }}
     >
-      <h3>Deals of the week</h3>
+      <h3>Hot Deals This Week</h3>
+      
       <Carousel>
         <Carousel.Item interval={5000}>
           <Link to="/Shoes"><img

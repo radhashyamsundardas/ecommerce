@@ -17,6 +17,7 @@ const style = {
 function Product() {
   return (
     <div>
+      <div className="top-card">EXCERCISE BIKES</div>
 
       <div className="card-container">
         

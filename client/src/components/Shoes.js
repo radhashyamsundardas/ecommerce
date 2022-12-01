@@ -14,6 +14,7 @@ const style = {
 function Shoes() {
   return (
     <div>
+      <div className="top-card">EXCERCISE EQUIPMENT</div>
       <div className="card-container">
         <Card style={style.body}>
           <Card.Img

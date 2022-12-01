@@ -14,6 +14,7 @@ const style = {
 function Treadmills() {
   return (
     <div>
+      <div className="top-card">TREADMILLS</div>
       <div className="card-container">
         <Card style={style.body}>
           <Card.Img

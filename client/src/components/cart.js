@@ -4,6 +4,7 @@ import React from 'react'
 function cart() {
   return (
     <div>
+      <div className="top-card">SHOPPING CART</div>
       <div className="cart-container">
       <h3 style={{textDecoration:"underline"}}>Your Shopping Cart Items</h3>
       <div className="item-container">
