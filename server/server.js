@@ -4,7 +4,7 @@ const path = require('path');
 const { authMiddleware } = require('./utils/auth');
 
 
-const { typeDefs, resolvers } = require('./schemas');
+const { typeDefs, resolvers } = require('../schemas');
 const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === 'production') {
   });  
 
 
-const startApolloServer = async (typeDefs, resolvers) => {
+const startApolloServer = async (_typeDefs, _resolvers) => {
 await server.start();
 server.applyMiddleware({ app });
 
