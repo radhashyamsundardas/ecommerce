@@ -6,25 +6,27 @@ export default function Home() {
   return (
     <div
       style={{
-        background: "white",
+        background: "black",
+        color: 'white',
         textAlign: "center",
-        width: 500,
-
-        aspectRatio: 7 / 5,
+        height: 500,
+        width:700,
         borderRadius: 5,
         margin: "auto",
+        paddingTop: 20,
         marginTop: 40,
         marginBottom: 40,
         boxShadow:
           "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
       }}
     >
-      <h4>Deals of the week</h4>
+      <h3>Deals of the week</h3>
       <Carousel>
         <Carousel.Item interval={5000}>
           <img
-            className="d-block w-100"
-            src="https://totalbodyexperts.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/5/_/5_2.png"
+          style={{borderRadius: 5, margin: 'auto'}}
+            className="d-block w-95"
+            src="https://m.media-amazon.com/images/I/61GRX27hm3L._AC_SX522_.jpg"
             height={400}
             alt=" random one"
           />
@@ -35,8 +37,9 @@ export default function Home() {
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <img
-            className="d-block w-100"
-            src="https://m.media-amazon.com/images/I/71MHeFRk30L._AC_SX679_.jpg"
+          style={{borderRadius: 5, margin: 'auto'}}
+            className="d-block w-95"
+            src="https://m.media-amazon.com/images/I/61l16I51ZFL._AC_SX522_.jpg"
             height={400}
             alt="random two"
           />
@@ -47,8 +50,9 @@ export default function Home() {
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <img
-            className="d-block w-100"
-            src="https://m.media-amazon.com/images/I/71Ii1NiUdIL._AC_SX679_.jpg"
+          style={{borderRadius: 5, margin: 'auto'}}
+            className="d-block w-95"
+            src="https://cdn.shopify.com/s/files/1/0582/1199/1684/products/G1Max180_1080x.png?v=1664174413"
             height={400}
             alt="randomthree"
           />
@@ -59,8 +63,9 @@ export default function Home() {
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <img
-            className="d-block w-100"
-            src="https://m.media-amazon.com/images/I/41rG5yj0hoL._AC_SX679_.jpg"
+          style={{borderRadius: 5, margin: 'auto'}}
+            className="d-block w-95"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcREGdoAxg_zjQu5d7kXg0LyO2hhQUI-WM8iBcN0UuTcWxtmsfPtHUDBS9-xS6mSE9bccWLMhwIbReB3W90KAwMiWUkSOuiy4eRvgApyst00LdqtDrueYFKq&usqp=CAE"
             height={400}
             alt="randomfour"
           />
@@ -71,8 +76,9 @@ export default function Home() {
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <img
-            className="d-block w-100"
-            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTZx9OMYz8NJZ0P8wHHWccWpapimO6rmOz6S6D1FYz6GCjVsqx3VnTIbuuHlJviK-ju2dDcdy6kCjwhBOdZZ31P5ftxhmwWzgIUgo22k5U&usqp=CAE"
+          style={{borderRadius: 5, margin: 'auto'}}
+            className="d-block w-95"
+            src="https://m.media-amazon.com/images/I/71at4vNFneL._AC_SX522_.jpg"
             height={400}
             alt="randomfive"
           />

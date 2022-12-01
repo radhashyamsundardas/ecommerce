@@ -1,22 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../imgs/default.png";
+import shopcart from "../imgs/shopping-cart.png"
 
 const styles = {
-  pic: {
+  logopic: {
     height: "220px",
     transform: "translateX(-15%)",
   },
+  cartpic: {
+    height: '20px',
+  }
 };
 
 export default function bar() {
   return (
     <nav className="navbar navbar-expand-lg py-0 navbar-light bg-light static-top">
       <div className="container">
-        <Link to="/Home">
+        <Link to="/">
           <img
             className="d-inline-block align-middle mr-2"
-            style={styles.pic}
+            style={styles.logopic}
             src={logo}
             alt="Company logo"
           />
@@ -55,7 +59,7 @@ export default function bar() {
 
             <li className="nav-item active">
               <Link className="link-to" to="/Cart">
-                Shopping Cart
+                <img src= {shopcart} style= {styles.cartpic}/>
               </Link>
             </li>
           </ul>
