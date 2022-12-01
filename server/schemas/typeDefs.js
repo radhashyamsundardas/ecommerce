@@ -52,6 +52,13 @@ const typeDefs = gql `
         cart: [Cart]
         order: [Order] 
     }
+    type Auth{
+        id:ID!
+        user: String
+    }
+
+
+
 
     type Query {
         users: [User]
@@ -65,7 +72,7 @@ const typeDefs = gql `
     }
 
     type Mutation {
-        addUser(username: String!, address: String!, city: String!, state: String!, zipcode: String!, country: String!, telephone: String!, email: String!, password: String!): User
+        addUser(username: String, address: String, city: String, state: String, zipcode: String, country: String, telephone: String, email: String, password: String): Auth
         updateUser(username: String!, address: String!, city: String!, state: String!, zipcode: String!, country: String!, telephone: String!, email: String!, password: String!): User
         login(email: String!, password: String!): User
         addProduct(productName: String!, productDescription: String!, stockQty: Int!, price: Float!, category: String!, image_link: String!): Product
@@ -75,7 +82,8 @@ const typeDefs = gql `
         updateOrder(id: ID!, paymentStatus: Boolean!, paymentId: ID!, productId: ID! , quantity: Int!, tax: Float!, total: Float!, carrier: String!, trackingNumber: String!): Order
         addCart(product_name: String!, productDescription: String!, category: String!, customerId: ID!, productId: ID!, quantity: Int!): Cart
         updateCart(id: ID!, productName: String!, productDescription: String!, category: String!, customerId: ID!, productId: ID!, quantity: Int!): Cart
-        removeCart(id: ID!): Cart       
+        removeCart(id: ID!): Cart  
+             
     }
 `;
 
