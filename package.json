@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
+  "engines": {
+    "node": "18.x" 
+  },
   "scripts": {
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
@@ -28,7 +31,6 @@
     "mongoose": "^6.7.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
-    "react-dom": "^18.2.0",
-    "stripe": "^11.1.0"
+    "react-dom": "^18.2.0"
   }
 }
