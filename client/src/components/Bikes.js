@@ -20,13 +20,13 @@ function Product() {
       <div className="top-card">EXCERCISE BIKES</div>
 
       <div className="card-container">
+
         
         <Card style={style.body}>
           <Card.Img
             variant="top"
             src="https://staticprod.site.flexispot.com/cdn-cgi/image/dpr=1,format=webp,fit=pad/https://staticprod.site.flexispot.com/flexispot/catalog/product/v/9/v91207.jpg"
-
-            height={220}
+            height={200}
 
           />
 
