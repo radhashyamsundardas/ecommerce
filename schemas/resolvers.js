@@ -1,6 +1,6 @@
-const {User, Product, Order, Cart} = require('../models');
+const {User, Product, Order, Cart} = require('../server/models');
 const {AuthenticationError} = require('apollo-server-express');
-const {signToken} = require('../utils/auth');
+const {signToken} = require('../server/utils/auth');
 
 const resolvers = {
     Query: { //GET routes
