@@ -50,8 +50,17 @@ ul{
   background-color: white;
 }
 
+.cart-container{
+  display: flex;
+  flex-direction: column;
+}
 
-.contact-container{
+.item-container{
+  margin: auto;
+}
+
+.contact-container, .cart-container{
+  background-color: white;
   width: 50vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 display: flex;
