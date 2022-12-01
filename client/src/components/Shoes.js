@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const style = {
   body: {
@@ -35,7 +36,7 @@ function Shoes() {
               You Save: $163.80 (39%)
             </h6>
 
-            <Button variant="primary">ADD TO CART</Button>
+           <a target="_blank "href="https://www.titan.fitness/racks/power-racks/t-2-series/t-2-series-power-rack/T2-SERIES-RACK.html"> <Button variant="primary">ADD TO CART</Button></a>
           </Card.Body>
         </Card>
 
@@ -58,7 +59,7 @@ function Shoes() {
               You Save: $192.50 (35%)
             </h6>
 
-            <Button variant="primary">ADD TO CART</Button>
+           <a target="_blank" href="https://www.titan.fitness/strength/weight-plates/cast-iron-plates/cast-iron-olympic-plates/CPLATE_GROUP.html"> <Button variant="primary">ADD TO CART</Button></a>
           </Card.Body>
         </Card>
 
