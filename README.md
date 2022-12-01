@@ -1,8 +1,7 @@
 # ECOMMERCE WEBSITE FOR WORKOUT EQUIPMENTS
 
-> ![Logo]()
 ### WEBSITE VIEW
-> ![Homepage]()
+> ![Homepage](https://ecommercegt.herokuapp.com/)
 
 ### Project's Title
 > The name of the project is WE(ECOMMERCE WEBSITE FOR WORKOUT EQUIPMENTS).
@@ -99,7 +98,7 @@ You would also need VSCODE, Graphql, INSOMNIA.
 
 ### LIVE LINK AND GITHUB REPOSITORY
 - [Link to repo](https://github.com/radhashyamsundardas/ecommerce)
-- [Link to Heroku]()
+- [Link to Heroku](https://ecommercegt.herokuapp.com/)
 
 
 
