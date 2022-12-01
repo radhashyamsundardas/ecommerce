@@ -19,24 +19,13 @@ function Product() {
     <div>
 
       <div className="card-container">
-        <Card style={style.body}>
-          <Card.Img
-            variant="top"
-            src="https://staticprod.site.flexispot.com/cdn-cgi/image/dpr=1,format=webp,fit=pad/https://staticprod.site.flexispot.com/flexispot/catalog/product/v/9/v91207.jpg"
-            height={200}
-          />
-          <Card.Body>
-            <Card.Title>Home office All-in-One</Card.Title>
+    
 
-            <>
-              <h6>
-                Was: $499.00 <br /> Price: $369.98 <br /> You Save: $130.00
-                (22%){" "}
-              </h6>
-              <Button variant="primary">ADD TO CART</Button>
-            </>
-          </Card.Body>
-        </Card>
+
+
+
+
+        
         <Card style={style.body}>
           <Card.Img
             variant="top"
