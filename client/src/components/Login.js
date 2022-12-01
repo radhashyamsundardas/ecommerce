@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   MDBContainer,
   MDBTabs,
@@ -26,12 +27,12 @@ function App() {
   return (
     <div className="login-container">
       <MDBContainer className="p-4 my-2 d-flex flex-column ">
-        <MDBTabs
+        {/* <MDBTabs
           pills
           justify
           className="mb-3 d-flex flex-row justify-content-between"
-        >
-          <MDBTabsItem>
+        > */}
+          {/* <MDBTabsItem>
             <MDBTabsLink
               onClick={() => handleJustifyClick("tab1")}
               active={justifyActive === "tab1"}
@@ -47,10 +48,10 @@ function App() {
               Register
             </MDBTabsLink>
           </MDBTabsItem>
-        </MDBTabs>
+        </MDBTabs> */}
 
-        <MDBTabsContent>
-          <MDBTabsPane show={justifyActive === "tab1"}>
+        {/* <MDBTabsContent>
+          <MDBTabsPane show={justifyActive === "tab1"}> */}
             <div className="text-center mb-3">
               <p>Sign in with:</p>
 
@@ -123,12 +124,12 @@ function App() {
 
             <MDBBtn color="info" className="mb-4 w-100">
               Sign in
-            </MDBBtn>
+           </MDBBtn>
             <p className="text-center">
-              Not a member? <a href="#!">Register</a>
+              Not a member? <Link to="/Signup"><p>Register</p></Link>
             </p>
-          </MDBTabsPane>
-
+          {/* </MDBTabsPane> */}
+{/* 
           <MDBTabsPane show={justifyActive === "tab2"}>
             <div className="text-center mb-3">
               <p>Sign in with:</p>
@@ -207,7 +208,7 @@ function App() {
 
             <MDBBtn className="btn btn-info mb-4 w-100">Sign up</MDBBtn>
           </MDBTabsPane>
-        </MDBTabsContent>
+        </MDBTabsContent> */}
       </MDBContainer>
     </div>
   );
