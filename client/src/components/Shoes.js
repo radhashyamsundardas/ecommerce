@@ -29,14 +29,14 @@ function Shoes() {
             {/* <Card.Text>
   </Card.Text> */}
             <h6>
-              Was: $420.00
+              Was: $499.99
               <br />
-              Price: $256.20
+              Price: $399.99
               <br />
-              You Save: $163.80 (39%)
+              You Save: $100.00
             </h6>
 
-           <a target="_blank "href="https://www.titan.fitness/racks/power-racks/t-2-series/t-2-series-power-rack/T2-SERIES-RACK.html"> <Button variant="primary">ADD TO CART</Button></a>
+           <a target="_blank "href="https://www.ebay.com/itm/144266371699?chn=ps&_trkparms=ispr%3D1&amdata=enc%3A1kjviENYdSpmhp1501yQUNA58&norover=1&mkevt=1&mkrid=711-213727-13078-0&mkcid=2&itemid=144266371699&targetid=4580702891777577&device=c&mktype=&googleloc=&poi=&campaignid=418640321&mkgroupid=1233652283797640&rlsatarget=pla-4580702891777577&abcId=9300602&merchantid=51291&msclkid=8d957332085318d7071310b8005e8616"> <Button variant="primary">ADD TO CART</Button></a>
           </Card.Body>
         </Card>
 
@@ -52,11 +52,11 @@ function Shoes() {
             {/* <Card.Text>
   </Card.Text> */}
             <h6>
-              Was: $357.5
+              Was: $500.00
               <br />
-              Price: $46.18
+              Price: $449.99
               <br />
-              You Save: $192.50 (35%)
+              You Save: $50.01
             </h6>
 
            <a target="_blank" href="https://www.titan.fitness/strength/weight-plates/cast-iron-plates/cast-iron-olympic-plates/CPLATE_GROUP.html"> <Button variant="primary">ADD TO CART</Button></a>
@@ -79,7 +79,7 @@ function Shoes() {
               <br />
               Price: $2,226.75
               <br />
-              You Save: $742.25 (25%)
+              You Save: $742.25 
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>
@@ -102,7 +102,7 @@ function Shoes() {
               <br />
               Price: $72.00
               <br />
-              You Save: $17.99 (20%)
+              You Save: $17.99 
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>
@@ -125,7 +125,7 @@ function Shoes() {
               <br />
               Price: $218.25
               <br />
-              You Save: $06.75 (3%)
+              You Save: $06.75
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>
@@ -148,7 +148,7 @@ function Shoes() {
               <br />
               Price: $96.60
               <br />
-              You Save: $8.39 (8%)
+              You Save: $8.39
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>
@@ -173,7 +173,7 @@ function Shoes() {
               <br />
               Price: $423.69
               <br />
-              You Save: $22.29 (5%)
+              You Save: $22.29 
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>
@@ -196,7 +196,7 @@ function Shoes() {
               <br />
               Price: $549.97
               <br />
-              You Save: $30.00 (5%)
+              You Save: $30.00 
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>

@@ -30,11 +30,11 @@ function Treadmills() {
 
   </Card.Text> */}
             <h6>
-              Was: $289.00
+              Was: $199.00
               <br />
-              Price: $249.00
+              Price: $179.99
               <br />
-              You Save: $40.00 (14%)
+              You Save: $19.01
             </h6>
 
            <a target="_blank" href="https://www.walmart.com/ip/FYC-1-5HP-Foldable-Portable-Treadmill-Home-Electric-Motorized-Running-Machine-Heart-Rate-Sensor-Gym-Home-Fitness-Workout-Jogging-Walking-Easily-Insta/1287262370"> <Button variant="primary">ADD TO CART</Button></a>
@@ -54,11 +54,11 @@ Integrated tablet holder: keeps your tablet secure and conveniently close; Tread
 16 inches x 50 inches tread belt: 
       </Card.Text> */}
             <h6>
-              Was: $349.00
+              Was: $389.00
               <br />
-              Price: $289.00
+              Price: $349.00
               <br />
-              You Save: $60.00 (17%)
+              You Save: $40.00 
             </h6>
 
             <a target="_blank" href="https://www.walmart.com/ip/Weslo-Cadence-G-5-9i-Folding-Treadmill-iFit-Compatible-with-Manually-Adjustable-Incline/45799822?wmlspartner=wlpa&selectedSellerId=0&http://clickserve.dartsearch.net/link/click?lid=92700060762254883&ds_s_kwgid=58700006715445296&ds_s_inventory_feed_id=97700000003583668&ds_a_cid=654818135&ds_a_caid=13956209185&ds_a_agid=126452889113&ds_a_lid=pla-1392082700544&ds_a_cid=116919406&ds_a_caid=361575031&ds_a_agid=1200667322826314&ds_a_fiid=&ds_a_lid=pla-4578641339573147&&ds_e_adid=&ds_e_matchtype=search&ds_e_device=c&ds_e_network=s&ds_e_product_group_id=4578641339573147&ds_e_product_id=45799822_0&ds_e_product_merchant_id=27449&ds_e_product_country=US&ds_e_product_language=EN&ds_e_product_channel=Online&ds_e_product_store_id=&ds_url_v=2&ds_dest_url=?adid=2222222242031946843&wmlspartner=wmtlabs&wl0=e&wl1=s&wl2=c&wl3=&wl4=pla-4578641339573147&wl5=&wl6=&wl7=&wl8=%7baceid%7d&wl9=&wl10=27449&wl11=Online&wl12=45799822_0&wl13=&veh=sem_LIA&msclkid=9efac4ec836119b83bd3a76585ecd4af&gclid=9efac4ec836119b83bd3a76585ecd4af&gclsrc=3p.ds"><Button variant="primary">ADD TO CART</Button></a>
@@ -83,7 +83,7 @@ Integrated tablet holder: keeps your tablet secure and conveniently close; Tread
               <br />
               Price: $299.98
               <br />
-              You Save: $79.00 (18%)
+              You Save: $79.00 
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>
@@ -108,7 +108,7 @@ Integrated tablet holder: keeps your tablet secure and conveniently close; Tread
               <br />
               Price: $599.00
               <br />
-              You Save: $299.00 (30%)
+              You Save: $299.00 
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>
@@ -133,7 +133,7 @@ Integrated tablet holder: keeps your tablet secure and conveniently close; Tread
               <br />
               Price: $89.99
               <br />
-              You Save: $29.00 (18%)
+              You Save: $29.00 
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>
@@ -158,7 +158,7 @@ Integrated tablet holder: keeps your tablet secure and conveniently close; Tread
               <br />
               Price: $269.00
               <br />
-              You Save: $300.00 (51%)
+              You Save: $300.00 
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>
@@ -204,7 +204,7 @@ Integrated tablet holder: keeps your tablet secure and conveniently close; Tread
               <br />
               Price: $49.99
               <br />
-              You Save: $20.00 (12%)
+              You Save: $20.00 
             </h6>
 
             <Button variant="primary">ADD TO CART</Button>

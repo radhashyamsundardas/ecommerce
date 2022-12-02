@@ -34,14 +34,14 @@ function Product() {
             {/* <Card.Text>
   </Card.Text> */}
             <h6>
-              Was: $499.00
+              Was: $599.99
               <br />
-              Price: $369.98
+              Price: $499.99
               <br />
-              You Save: $130.00 (22%)
+              You Save: $100.00
             </h6>
 
-            <a target="_blank" href="https://flexispot.ph/product/all-in-one-desk-bike-deskcise-pro-v9/"> <Button variant="primary">ADD TO CART</Button></a>
+            <a target="_blank" href="https://www.flexispot.com/all-in-one-desk-bikes-deskcise-pro"> <Button variant="primary">ADD TO CART</Button></a>
           </Card.Body>
         </Card>
         <Card style={style.body}>
@@ -51,8 +51,8 @@ function Product() {
           {/* <Card.Text>
   </Card.Text> */}
           <h6>Was:  $1799.00<br />
-            Price:  $1049.98<br />
-            You Save: $749.00 (40%)</h6>
+            Price:  $1049.00<br />
+            You Save: $749.00 </h6>
           <a target="_blank" href="https://www.freebeatfit.com/products/lit-bike-klarna-limited-edition"><Button variant="primary">ADD TO CART</Button></a>
         </Card.Body>
       </Card>
@@ -71,7 +71,7 @@ function Product() {
   </Card.Text> */}
           <h6>Was:  $369.00<br />
             Price:  $309.00<br />
-            You Save: $50.00 (15%)</h6>
+            You Save: $50.00 </h6>
           <Button variant="primary">ADD TO CART</Button>
         </Card.Body>
       </Card>
@@ -94,7 +94,7 @@ function Product() {
   </Card.Text> */}
           <h6>Was:  $249.99<br />
             Price:  $219.99<br />
-            You Save: $30.00 (15%)</h6>
+            You Save: $30.00 </h6>
           <Button variant="primary">ADD TO CART</Button>
         </Card.Body>
       </Card>
@@ -106,7 +106,7 @@ function Product() {
   </Card.Text> */}
           <h6>Was:  $439.99<br />
             Price:  $199.00<br />
-            You Save: $239.00 (55%)</h6>
+            You Save: $239.00 </h6>
           <Button variant="primary">ADD TO CART</Button>
         </Card.Body>
       </Card>
@@ -129,7 +129,7 @@ function Product() {
   </Card.Text> */}
           <h6>Was:  $999.00<br />
             Price:  $699.98<br />
-            You Save: $299.00 (30%)</h6>
+            You Save: $299.00 </h6>
           <Button variant="primary">ADD TO CART</Button>
         </Card.Body>
       </Card>
