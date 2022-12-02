@@ -4,7 +4,6 @@ const {signToken} = require('../utils/auth');
 
 const resolvers = {
     Query: { //GET routes
-        categories: async () => Category.find(),
         users: async () => {
             return User.find().populate('order'); //when querying users we must also populate or pull all of the user's order
         },
